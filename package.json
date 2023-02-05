@@ -6,10 +6,8 @@
     "access": "public"
   },
   "main": "http-parser.js",
-  "files": [
-    "http-parser.js"
-  ],
   "type": "module",
+  "types": "http-parser.d.ts",
   "scripts": {
     "test": "python tests/test.py && node tests/iojs/test-http-parser-durability.js",
     "testv12": "python tests/test.py --node-args=\"--http-parser=legacy\" && node --http-parser=legacy tests/iojs/test-http-parser-durability.js"
@@ -18,6 +16,10 @@
     "type": "git",
     "url": "https://github.com/frida/gumjs-http-parser.git"
   },
+  "files": [
+    "http-parser.js",
+    "http-parser.d.ts"
+  ],
   "keywords": [
     "http"
   ],
